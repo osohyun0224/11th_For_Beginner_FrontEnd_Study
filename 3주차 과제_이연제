@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title> 프론트 스터디 과제 </title>
+    <style>
+        div{
+          width : 350px;
+          height : 200px;
+          background-color : red;
+        }
+        .box1{
+          background-color : rgb(154, 205, 49);
+          border-width : 5px;
+          border-style : double;
+          border-color : rgb(13, 109, 4);
+          left : 30px;
+          position : relative;
+      }
+        .box2{
+          background-color : rgb(250, 250, 210);
+          border-width : 3px;
+          border-radius : 20%;
+          border-style : solid;
+          border-top-color : rgb(160, 107, 63);
+          border-left-color : rgb(160, 107, 63);
+          border-right-color : rgb(244, 164, 97);
+          border-bottom-color : rgb(244, 164, 97);
+      }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
