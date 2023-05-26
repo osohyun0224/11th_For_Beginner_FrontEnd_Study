@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 프론트 스터디 4주차 과제1</title>
+    
+</head>
+<body>
+    <div>
+        이름 : 
+        <input id = "inputName" type = "text">
+        학과 : 
+        <input id = "inputMajor" type = "text">
+        <button onclick="printInfo()">확인</button>
+    </div>
+    <script>
+        function printInfo(){
+            let inputName = document.getElementById('inputName').value;
+            let inputMajor = document.getElementById('inputMajor').value;
+            document.write("안녕하세요, 저는 " + inputMajor + " 재학 중인 " + inputName + "입니다.");
+        }
+    </script>
+</body>
+</html>
