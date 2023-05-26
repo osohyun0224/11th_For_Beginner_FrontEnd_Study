@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>프론트 스터디 4주차</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        div {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="id"><input type="text" placeholder="아이디"></div>
+        <div class="pass"><input type="password" placeholder="비밀번호"></div>
+        <div class="enter"><button onclick="join()">회원가입</button></div>
+        <div class="can"><button onclick="cancel()">취소</button></div>
+    </div>
+
+    <script>
+        function join() {
+            const id = "dlrjstkd1123";
+            const pw = "gunsang11@";
+
+            const enteredId = document.querySelector('.id input').value;
+            const enteredPw = document.querySelector('.pass input').value;
+
+            if (enteredId === id && enteredPw === pw) {
+                alert("회원가입이 완료되었습니다.");
+            } else {
+                alert("아이디와 비밀번호를 확인해주세요.");
+            }
+        }
+
+        function cancel() {
+            alert("회원가입을 취소하였습니다.");
+        }
+    </script>
+</body>
+
+</html>
