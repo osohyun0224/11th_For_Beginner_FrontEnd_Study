@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>5주차 스터디</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        * {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .button button {
+            font-size: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .bottom {
+            border-bottom: 1px solid black;
+
+        }
+
+        input[type="text"] {
+            border: none;
+            outline: none;
+            font-size: 30px;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h1>숫자 -> 한글</h1>
+    </div>
+    <div class="middle">
+        <h3>결과 표시창</h3>
+    </div>
+    <div class="bottom">
+        <input type="text">
+    </div>
+    <div class="button">
+        <button onclick="convertToHangul()">변경</button>
+    </div>
+
+    <script>
+        function convertToHangul() {
+            let number = document.querySelector('input[type="text"]').value;
+            let result = '';
+
+            const koreanNumbers = ['영', '일', '이', '삼', '사', '오', '육', '칠', '팔', '구'];
+
+            for (let i = 0; i < number.length; i++) {
+                let index = parseInt(number.charAt(i));
+                result += koreanNumbers[index];
+            }
+
+            document.querySelector('.middle h3').textContent = result;
+        }
+    </script>
+</body>
+
+</html>
