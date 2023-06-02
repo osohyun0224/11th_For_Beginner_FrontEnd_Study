@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 프론트 스터디 4주차 과제2</title>
+</head>
+<body>
+    <div>
+      <input id = "inputId" type = "text" placeholder="아이디">
+      <input id = "inputPw" type = "text" placeholder="비밀번호">
+      <button onclick="gogo()">회원가입</button>
+      <button onclick="cancle()">취소</button>
+    </div>
+
+    <script>
+      const id = "iid10";
+      const pw = "ppw10";
+      function gogo(){
+        let inputId = document.getElementById('inputId').value;
+        let inputPw = document.getElementById('inputPw').value;
+
+        if(inputId != id || inputPw != pw){
+          window.alert("아이디와 비밀번호를 확인해주세요.")
+        }else{
+          window.alert("회원가입이 완료되었습니다.") 
+        }
+      }
+
+      function cancle(){
+        window.alert("회원가입을 취소하였습니다.")
+      } 
+    </script>
+</body>
+</html>
